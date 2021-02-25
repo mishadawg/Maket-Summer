@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Fonts */
+@font-face {
+    font-family: "Museo700";
+    src: url(../fonts/Museo700-Regular.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: "TektonProBoldCond";
+    src: url(../fonts/TektonPro-BoldCond.otf);
+    font-weight: bold;
+}
+.museoB{
+    font-family: "Museo700";
+    font-weight: bold;
+}
+.tertonProBoldCondB{
+    font-family: "TektonProBoldCond";
+    font-weight: bold;
+}
+/* Fonts CDN */
+.signikaNegativeR{
+    font-family: 'Signika Negative',sans-serif;
+    font-weight: 400;
+}
+.signikaNegativeSB{
+    font-family: 'Signika Negative',sans-serif;
+    font-weight: 00;
+}
+.openSansR{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+.openSansSB{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+.openSansB{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
