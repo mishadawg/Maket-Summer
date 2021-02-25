@@ -43,3 +43,80 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
 }
+
+/* Global classes */
+.wrapper{
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+/* Header*/
+.menuSpace{
+    padding-top: 60px;
+    padding-bottom: 8px;
+}
+.containerHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logoHead{
+    display: flex;
+    align-items: center;
+    flex-basis: 30%;
+}
+.logoHead > img{
+    width: 12px;
+    height: 12px;
+}
+.companyName{
+    margin-left: 8px;
+    font-size: 36px;
+    color: #06509D;
+}
+.containerMenu{
+    display: flex;
+    justify-content: space-between;
+}
+.menuHead{
+    flex-basis: 50%;
+}
+.menuItem{
+    list-style: none;
+}
+.menuLink{
+    color: #003764;
+    font-size: 13px;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* Main Board */
+.mainBoard{
+    background-color: #033D78;
+}
+.socialMediaBarColorBg{
+    background-color: #06427e85;
+}
+.socialMediaBar{
+    margin-bottom: 69px;
+}
+.socialMediaContainer{
+    display: flex;
+    justify-self: start;
+    align-items: flex-start;
+}
+.socialMediaItem{
+    padding: 18px;
+    background-color: #21588D;
+    list-style: none;
+}
+.socialMediaLink{
+    color: white;
+    text-decoration: none;
+}
+.socialMediaLink > i{
+    font-size: 16px;
+}
+
