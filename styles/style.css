@@ -120,6 +120,10 @@
     list-style: none;
     cursor: pointer;
 }
+.socialMediaItem:hover{
+    transition: linear 0.4s;
+    background-color: #8EB61C;
+}
 .socialMediaItem:last-of-type{
     padding: 17px;
 }
@@ -202,6 +206,7 @@
     text-transform: uppercase;
     padding: 15px;
 }
+
 
 /* Best Features */
 .contentFeatures{
