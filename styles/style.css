@@ -18,7 +18,7 @@
     font-family: "Museo700";
     font-weight: bold;
 }
-.tertonProBoldCondB{
+.tektonProBoldCondB{
     font-family: "TektonProBoldCond";
     font-weight: bold;
 }
@@ -48,6 +48,13 @@
 .wrapper{
     max-width: 1240px;
     margin: 0 auto;
+}
+.mainTitleCards,.titleShowCase,.titleNews{
+    text-align: center;
+    color: #093059;
+    background-color: white;
+    padding: 0px 15px;
+    margin-bottom: 32px;
 }
 
 /* Header*/
@@ -111,6 +118,10 @@
     padding: 18px;
     background-color: #21588D;
     list-style: none;
+    cursor: pointer;
+}
+.socialMediaItem:last-of-type{
+    padding: 17px;
 }
 .socialMediaLink{
     color: white;
@@ -119,4 +130,153 @@
 .socialMediaLink > i{
     font-size: 16px;
 }
+/* Promo */
+.promoBoard{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+.promoTitle{
+    font-size: 22px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.promoDescrip{
+    color: white;
+    margin-bottom: 26px;
+}
+.containerPromoVideo{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+.promoVideo{
+    width: 140px;
+    height: 90px;
+    background-color: white;
+    cursor: pointer;
+}
+.promoVideoAlt{
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+}
+.promoVideoAlt > img{
+    margin-left: 23px;
+    margin-right: 6px;
+    width: 36px;
+    height: 19px;  
+}
+.promoVideoText{
+    color: white;
+    font-size: 21px;
+    text-transform: uppercase;
+}
+.promoOfferDownload{
+    color: white;
+    font-size: 14px;
+    flex-basis: 100%;
+    margin-bottom: 7px;
+}
+.containerPromoButtons{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 46px;
+}
+.containerPromoButtons > a{
+    background: rgb(111,135,35);
+    background: linear-gradient(0deg, rgba(111,135,35,1) 0%, rgba(177,214,58,1) 82%);
+}
+.promoButton:nth-last-of-type(1){
+    background: rgb(212,108,31);
+    background: linear-gradient(0deg, rgba(212,108,31,1) 0%, rgba(233,162,109,1) 90%);
+}
+.promoButton{
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+/* Best Features */
+.contentFeatures{
+    padding: 40px 0px;
+}
+.containerOfCards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.containerOfCards > .cardSelf{
+    flex-basis: 18%;
+}
+.headCard,.descripCard,.learnMoreCard{
+    text-align: center;
+    font-size: 11px;
+}
+.titleCard{
+    margin-top: 12px;
+}
+.headCard{
+    display: flex;
+    background-color: #F8F8F8;
+    color: #0E57A1;
+    font-size: 13px;
+    height: 108px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.descripCard{
+    color: #5A5A5A; 
+}
+.learnMoreCard{
+    color: #0E57A1;
+}
+
+
+/* ShowCaseNews */
+.containerOfShowCaseNews{
+    padding: 40px 0px;
+}
+.containerOfShowCaseCards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.showCaseCard{
+    background-color: #0E57A1;
+    flex-basis: 45%;
+    height: 132px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.showCaseCard > p{
+    color: white;
+    font-size: 27px;
+
+}
+
+/* News */
+.containerNews{
+    display: flex;
+    flex-direction: column;
+    
+}
+.newsSelf{
+    background-color: bisque;
+    margin-bottom: 2px;
+    display: flex;
+}
+
+
+
 
