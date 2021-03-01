@@ -253,6 +253,10 @@
 .containerOfCards > .cardSelf{
     flex-basis: 18%;
 }
+.cardSelf{
+    display: flex;
+    flex-flow: column;
+}
 .headCard,.descripCard,.learnMoreCard{
     text-align: center;
     font-size: 11px;
@@ -271,10 +275,24 @@
     justify-content: center;
 }
 .descripCard{
-    color: #5A5A5A; 
+    font-size: 13px;
+    color: #5A5A5A;
+    padding: 12px 18px; 
 }
 .learnMoreCard{
+    font-size: 13px;
     color: #0E57A1;
+    background-color: white;
+    border: none;
+    outline: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.learnMoreCard:hover{
+    color: #0d5094;
+}
+.hiddenText{
+    display: none;
 }
 
 
@@ -287,7 +305,7 @@
 }
 .containerOfShowCaseCards{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-wrap: wrap;
 }
 .showCaseContainer{
@@ -295,17 +313,39 @@
 }
 .showCaseCard{
     background-color: #0E57A1;
-    flex-basis: 45%;
+    flex-basis: 184px;
     height: 132px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 13px;
     margin-bottom: 15px;
+    position: relative;
 }
-.showCaseCard > p{
+.showCaseCard:nth-last-child(4){
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.firstInnerCard{
+    padding-right: 7px;
+    padding-bottom: 17px;
+    font-size: 12px;
     color: white;
-    font-size: 27px;
-
+}
+.innerCard{
+    color: white;
+    font-size: 18px;
+}
+.overlayCard{
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    position: absolute;
+    padding: 14px 16px;
+    background-color: #001E3C;
+    top: 0px;
+    left: 0px;
 }
 
 /* News */
@@ -327,30 +367,32 @@
     color: #0E57A1;
     text-align: center;
     font-size: 11px;
-    padding: 14px; 
+    padding: 0px 12px;
 }
 .timeNews > span{
     font-size: 24px;
 }
 .descripNews{
-    font-size: 11px;
+    font-size: 14px;
     color: #5A5A5A;
+    padding-top: 4px;
+    padding-left: 20px;
 }
 .descripNews>a{
     color: #0E57A1;
 }
 .descripContainerNews{
     border-left: 1px solid #3F8CDB;
-    padding: 14px;
     background-color: #F8F8F8;
 }
-/* Float left??? */
 .buttonNews{
     color: white;
     padding: 14px 28px;
     border:none;
     background-color: #001E3C;
-    float:left;
+    float:right;
+    margin-bottom: 5px;
+    cursor: pointer;
 }
 
 /* What People say */
@@ -367,15 +409,23 @@
     padding: 20px 0px;
     justify-content: space-between;
 }
+.cardDescripSelf{
+    margin-right: 3px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
 .arrow{
     color: #0E57A1;
     font-size: 52px;
 }
 .descripWhatsUp{
-    padding: 20px 24px;
-    font-size: 12px;
+    padding: 18px 24px;
+    font-size: 14px;
     background-color: #fff;
     margin-bottom: 52px;
+    height: 60%;
+    overflow: hidden;
 }
 .fewWordsInFrontWhatsUp{
     color: #112D49;
