@@ -98,10 +98,28 @@
     cursor: pointer;
     text-transform: uppercase;
 }
+.menuLink:hover{
+    color: #0E57A1;
+    transition: 0.3s;
+}
+.selectionOfMenuLine{
+    display: none;
+    top: 0px;
+    margin: 0px -1.5%;
+    position: absolute;
+    background-color: #0E57A1;
+    width: 120px;
+    height: 15px;
+}
+.menuLink:hover .selectionOfMenuLine{
+    display: block;
+    transition: 0.3s;
+}
 
 /* Main Board */
 .mainBoard{
-    background-color: #033D78;
+    background: rgb(4,63,124);
+    background: linear-gradient(90deg, rgba(4,63,124,1) 0%, rgba(71,125,169,1) 50%, rgba(4,63,124,1) 100%);
 }
 .socialMediaBarColorBg{
     background-color: #06427e85;
@@ -135,6 +153,12 @@
     font-size: 16px;
 }
 /* Promo */
+.promoContainer{
+    background-image: url(../media/img/backgroundHand.png);
+    background-position: 65% -5%;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
 .promoBoard{
     display: flex;
     flex-direction: column;
@@ -205,6 +229,14 @@
     text-decoration: none;
     text-transform: uppercase;
     padding: 15px;
+}
+.promoButton:hover:nth-last-of-type(2){
+    background: rgb(107, 129, 33);
+    background: linear-gradient(0deg, rgb(99, 119, 32) 0%, rgb(162, 195, 53) 82%);
+}
+.promoButton:hover:nth-last-of-type(1){
+    background: rgb(189, 97, 28);
+    background: linear-gradient(0deg, rgb(168, 86, 24) 0%, rgb(214, 150, 100) 90%);
 }
 
 
