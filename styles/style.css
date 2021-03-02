@@ -71,6 +71,9 @@ hr{
     align-items: center;
     margin-bottom: 32px;
 }
+.hide{
+    display: none;
+}
 
 /* Header*/
 .menuSpace{
@@ -133,14 +136,13 @@ hr{
 
 /* Main Board */
 .mainBoard{
+    position: relative;
     background: rgb(4,63,124);
     background: linear-gradient(90deg, rgba(4,63,124,1) 0%, rgba(71,125,169,1) 50%, rgba(4,63,124,1) 100%);
 }
 .socialMediaBarColorBg{
-    background-color: #06427e85;
-}
-.socialMediaBar{
-    margin-bottom: 69px;
+    background-color: #06427e26;
+    z-index: 1;
 }
 .socialMediaContainer{
     display: flex;
@@ -168,11 +170,19 @@ hr{
     font-size: 16px;
 }
 /* Promo */
+.mainBoard > article{
+    z-index: 15;
+}
 .promoContainer{
+    z-index: 15;
+    position: absolute;
     background-image: url(../media/img/backgroundHand.png);
-    background-position: 65% -5%;
     background-repeat: no-repeat;
-    background-size: 50%;
+    width: 50%;
+    height: 558px;
+    background-size: 100%;
+    left: 30%;
+    background-position: 105% -5%;
 }
 .promoBoard{
     display: flex;
@@ -180,6 +190,7 @@ hr{
     width: 35%;
 }
 .promoTitle{
+    margin-top: 69px;
     font-size: 22px;
     color: white;
     text-transform: uppercase;
@@ -253,7 +264,6 @@ hr{
     background: rgb(189, 97, 28);
     background: linear-gradient(0deg, rgb(168, 86, 24) 0%, rgb(214, 150, 100) 90%);
 }
-
 
 /* Best Features */
 .contentFeatures{
@@ -486,22 +496,22 @@ hr{
     content: ' ';
     position: absolute;
     bottom: 95px;
-    transform: rotate(45deg);
-    width: 78px;
+    transform: rotate(60deg);
+    width: 100px;
     z-index: 1;
     height: 65px;
-    margin-left: -8px;
-    background-color: red;
+    margin-left: -15px;
+    background-color: white;
 }
 .containerAuthorWhatsUp::after{
     content: ' ';
     position: absolute;
-    bottom: 77px;
-    width: 55px;
+    bottom: 64px;
+    width: 60px;
     z-index: 1;
-    height: 101px;
-    margin-left: 36px;
-    background-color: green;
+    height: 100px;
+    margin-left: 30px;
+    background-color: #f1f1f1;
 }
 
 /* Footer */
@@ -537,4 +547,16 @@ hr{
     display: flex;
     list-style: none;
     padding: 0px 30px;
+}
+
+/* etcPages */
+.etcPages{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titleEtcPages{
+    font-size: 64px;
+    text-shadow: 1px 1px #a99e9e;
 }
