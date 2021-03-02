@@ -45,6 +45,15 @@
 }
 
 /* Global classes */
+hr{
+    width: 100%;
+    border:none;
+    border-top:1px dotted #D1D1D1;
+    color:#fff;
+    background-color:#fff;
+    height:1px;
+
+}
 .wrapper{
     max-width: 1240px;
     margin: 0 auto;
@@ -54,6 +63,12 @@
     color: #093059;
     background-color: white;
     padding: 0px 15px;
+    flex-basis: 30%;
+}
+.titleContainerGlobal{
+    background-color: white;
+    display: flex;
+    align-items: center;
     margin-bottom: 32px;
 }
 
@@ -305,7 +320,7 @@
 }
 .containerOfShowCaseCards{
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 .showCaseContainer{
@@ -313,12 +328,11 @@
 }
 .showCaseCard{
     background-color: #0E57A1;
-    flex-basis: 184px;
+    flex-basis: 49.5%;
     height: 132px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 13px;
     margin-bottom: 15px;
     position: relative;
 }
@@ -396,13 +410,32 @@
 }
 
 /* What People say */
+.containerCarusel{
+    display: flex;
+    align-items: center;
+}
+.leftArr,.rightArr{
+    width: 65%;
+    display: flex;
+    text-decoration: none;
+    margin-top: 67px;
+    margin-bottom: auto;
+}
+.leftArr{
+    justify-content: flex-end;
+    margin-right: 16px;
+}
+.rightArr{
+    justify-content: flex-start;
+    margin-left: 16px;
+}
 .whatsUpBoard{
     background-color: #F1F1F1;
     margin-bottom: 41px;
 }
 .titleWhatsUp{
-    padding-bottom: 36px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
+    padding-bottom: 8px;
 }
 .containerWhaysUp{
     display: flex;
@@ -414,6 +447,7 @@
     display: flex;
     flex-flow: column;
     justify-content: space-between;
+    position: relative;
 }
 .arrow{
     color: #0E57A1;
@@ -425,6 +459,7 @@
     background-color: #fff;
     margin-bottom: 52px;
     height: 60%;
+    z-index: 6;
     overflow: hidden;
 }
 .fewWordsInFrontWhatsUp{
@@ -441,8 +476,32 @@
     color: #0E57A1;
 }
 .containerAuthorWhatsUp{
+    position: relative;
     display: flex;
     align-items: center;
+    margin-left: 23px;
+    z-index: 5;
+}
+.containerAuthorWhatsUp::before{
+    content: ' ';
+    position: absolute;
+    bottom: 95px;
+    transform: rotate(45deg);
+    width: 78px;
+    z-index: 1;
+    height: 65px;
+    margin-left: -8px;
+    background-color: red;
+}
+.containerAuthorWhatsUp::after{
+    content: ' ';
+    position: absolute;
+    bottom: 77px;
+    width: 55px;
+    z-index: 1;
+    height: 101px;
+    margin-left: 36px;
+    background-color: green;
 }
 
 /* Footer */
