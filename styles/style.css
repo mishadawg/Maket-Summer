@@ -74,6 +74,9 @@ hr{
 .hide{
     display: none;
 }
+.show{
+    display: block;
+}
 
 /* Header*/
 .menuSpace{
@@ -316,9 +319,7 @@ hr{
 .learnMoreCard:hover{
     color: #0d5094;
 }
-.hiddenText{
-    display: none;
-}
+
 
 
 /* ShowCaseNews */
