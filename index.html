@@ -9,6 +9,8 @@
     <!-- Some styles get from ./fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Signika+Negative:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <script async src="./script/modal.js"></script>
+    <link rel="stylesheet" href="./styles/modal.css">
     <!-- Own -->
     <link rel="stylesheet" href="./styles/style.css">
     <script async src="./script/script.js"></script>
@@ -62,7 +64,9 @@
     <main id='home'>
         <!-- Main Board -->
         <section class="mainBoard">
+            <!-- Hand -->
             <div class="promoContainer"></div>
+            <!-- Social Bar -->
             <div class="socialMediaBarColorBg">
                     <div class="socialMediaBar wrapper">
                         <ul class="socialMediaContainer">
@@ -94,6 +98,7 @@
                         </ul>
                     </div>
             </div>
+            <!-- Promo -->
             <article>
                 <div class="wrapper">
                     <div class="promoBoard">
@@ -107,8 +112,9 @@
                             Nullam id dolor.
                         </p>
                         <div class="containerPromoVideo">
-                            <!-- <video src="./"></video> -->
-                            <div class="promoVideo" alt="video"></div>
+                            <div data-toggle="promoVideo" class="promoVideo" alt="video">
+                                <i class="fas fa-play"></i>
+                            </div>
                             <div class="promoVideoAlt">
                                 <img src="./media/img/arrow.png" alt="">
                                 <span class="promoVideoText tektonProBoldCondB">App showcase</span>
@@ -253,23 +259,20 @@
                             </h2>
                             <hr>
                         </div>
-                        <!-- <h2 class="titleShowCase signikaNegativeSB">
-                            Showcase
-                        </h2> -->
                         <div class="containerOfShowCaseCards">
-                            <div class="showCaseCard">
+                            <div data-toggle ='summerapp1' class="showCaseCard">
                                 <p class="overlayCard openSansSB">1</p>
                                 <p class="firstInnerCard museoB">summerapp</p>
                             </div>
-                            <div class="showCaseCard">
+                            <div data-toggle ='summerapp2' class="showCaseCard">
                                 <p class="overlayCard openSansSB">2</p>
                                 <p class="innerCard museoB">summerapp</p>
                             </div>
-                            <div class="showCaseCard">
+                            <div data-toggle ='summerapp3' class="showCaseCard">
                                 <p class="overlayCard openSansSB">3</p>
                                 <p class="innerCard museoB">summerapp</p>
                             </div>
-                            <div class="showCaseCard">
+                            <div data-toggle ='summerapp4' class="showCaseCard">
                                 <p class="overlayCard openSansSB">4</p>
                                 <p class="innerCard museoB">summerapp</p>
                             </div>

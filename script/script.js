@@ -127,8 +127,44 @@ function changeTextInButton(e){
 }
 // End Text Opens
 
-// TODO Сделать Модальные окна для видео и для картинок Шоукейс
 // Modal windows
+var modalSumApOne = $modal({
+    title: 'Summerapp 1',
+  content: '<img src="media/img/modalimg.png" style="display: block; height: 100%; width: 100%;">'
+});
+var modalSumApTwo = $modal({
+    title: 'Summerapp 2',
+    content: '<img src="media/img/modalimg.png" style="display: block; height: 100%; width: 100%;">'
+});
+var modalSumApThree = $modal({
+    title: 'Summerapp 3',
+    content: '<img src="media/img/modalimg.png" style="display: block; height: 100%; width: 100%;">'
+});
+var modalSumApFour = $modal({
+    title: 'Summerapp 4',
+    content: '<img src="media/img/modalimg.png" style="display: block; height: 100%; width: 100%;">'
+});
+var promoVideoModal = $modal({
+    title: 'Summerapp Video Case',
+    content: '<iframe style = "width=560px; height=315px;" width="560" height="315" src="https://www.youtube.com/embed/3ejFKAJzlrk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+});
+
+document.addEventListener('click', function (e) {
+    if (e.target.dataset.toggle === 'summerapp1'){
+        modalSumApOne.show();
+    }else if(e.target.dataset.toggle === 'summerapp2'){
+        modalSumApTwo.show();
+    }else if(e.target.dataset.toggle === 'summerapp3'){
+        modalSumApThree.show();
+    }else if(e.target.dataset.toggle === 'summerapp4'){
+        modalSumApFour.show();
+    }else if(e.target.dataset.toggle === 'summerapp4'){
+        modalSumApFour.show();
+    }else if(e.target.dataset.toggle === 'promoVideo'){
+        promoVideoModal.show();
+    }
+  });
+
 
 // End Modal windows
 

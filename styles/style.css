@@ -209,10 +209,22 @@ hr{
     margin-bottom: 30px;
 }
 .promoVideo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 140px;
     height: 90px;
     background-color: white;
     cursor: pointer;
+}
+.promoVideo > i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 30px;
+    background-color: #194168;
+    color: white;
 }
 .promoVideoAlt{
     display: flex;
@@ -320,8 +332,6 @@ hr{
     color: #0d5094;
 }
 
-
-
 /* ShowCaseNews */
 .containerOfShowCaseNews{
     padding: 40px 0px;
@@ -330,6 +340,7 @@ hr{
     justify-content: space-between;
 }
 .containerOfShowCaseCards{
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
