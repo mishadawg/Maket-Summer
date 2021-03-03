@@ -240,10 +240,10 @@ function checkClassArrLeft(content){
     return checkContent = content.classList.contains('fa-angle-left');
 }
 function removeAllClasses(){
-    zindAdd(cardOneContainer);
-    zindAdd(cardTwoContainer);
-    zindAdd(cardThreeContainer);
-    zindAdd(cardFourContainer);
+    zindDel(cardOneContainer);
+    zindDel(cardTwoContainer);
+    zindDel(cardThreeContainer);
+    zindDel(cardFourContainer);
     deleteClassCard(cardDescripOne);
     deleteClassCard(cardDescripTwo);
     deleteClassCard(cardDescripThree);

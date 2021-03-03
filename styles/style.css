@@ -197,6 +197,9 @@ hr{
     left: 30%;
     background-position: 105% -5%;
 }
+.promoContainerMobile{
+    display: none;
+}
 .promoBoard{
     display: flex;
     flex-direction: column;
@@ -581,4 +584,104 @@ hr{
 .titleEtcPages{
     font-size: 64px;
     text-shadow: 1px 1px #a99e9e;
+}
+
+/* Media */
+@media (max-width: 1239px){
+    .wrapper{
+        padding:0px 16px;
+    }
+    .promoContainer{
+        display: none;
+    }
+    .promoContainerMobile{
+        display: inline-block;
+    }
+    .containerPromoButtons {
+        width: 85%;
+    }
+    .linkFooter,.copyRightFooter {
+        font-size: 10px;
+    }
+    .containerWhaysUp {
+        margin-top: 8px;
+    }
+    .mainTitleCards, .titleShowCase, .titleNews, .titleWhatsUp {
+        flex-basis: 40%;
+        font-size: 20px;
+    }
+
+}
+@media (max-width: 1239px){
+    .containerAuthorWhatsUp::before {
+        display: none;
+    }
+    .containerAuthorWhatsUp::after {
+        display: none;
+    }
+    .descripWhatsUp {
+        height: 100%;
+    }
+}
+@media (max-width: 1239px){
+    .containerPromoButtons {
+        width: 100%;
+    }
+}
+@media (max-width: 425px){
+    .arrow {
+        display: none;
+    }
+    .containerWhaysUp{
+        flex-wrap: wrap;
+    }
+    .footerBoard {
+        padding-bottom: 8px;
+        flex-direction: column;
+    }
+    .linkFooter,.copyRightFooter,.socialContainerFooter {
+        padding: 0px;
+        border: none;
+        text-align: center;
+    }
+    .socialContainerFooter {
+        justify-content: center;
+    }
+    .containerAuthorWhatsUp {
+        margin-left: 12px;
+    }
+    .descripWhatsUp {
+        padding: 12px;
+        margin-bottom: 24px;
+    }
+    .cardDescripSelf {
+        margin-top: 16px;
+        margin-right: 0px;
+    }
+    .mainTitleCards, .titleShowCase, .titleNews, .titleWhatsUp {
+        flex-basis: 100%;
+        font-size: 16px;
+    }
+    .containerForNews {
+        flex-basis: 100%;
+    }
+    .containerOfShowCaseNews {
+        display: block; 
+    }
+    .containerOfCards > .cardSelf {
+        flex-basis: 100%;
+        margin-bottom: 54px;
+    }
+    .promoBoard {
+        width: 100%;
+    }
+    .containerMenu {
+        display: none;
+    }
+    .menuHead {
+        display: none;
+    }
+    .containerHead {
+        justify-content: center;
+    }
 }
