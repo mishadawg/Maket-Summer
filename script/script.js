@@ -164,30 +164,164 @@ document.addEventListener('click', function (e) {
         promoVideoModal.show();
     }
   });
-
-
 // End Modal windows
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// TODO Карусель внизу
 // Carusel
+let arrCards = document.getElementsByClassName('descripWhatsUp');
+// Containers
+let cardOneContainer = document.getElementById('cardOneContainer');
+let cardTwoContainer = document.getElementById('cardTwoContainer');
+let cardThreeContainer = document.getElementById('cardThreeContainer');
+let cardFourContainer = document.getElementById('cardFourContainer');
+//Containers of Descrip
+let cardDescripOne = document.getElementById('cardDescripOne');
+let cardDescripTwo = document.getElementById('cardDescripTwo');
+let cardDescripThree = document.getElementById('cardDescripThree');
+let cardDescripFour = document.getElementById('cardDescripFour');
+// Arrs
+let leftArr = document.getElementById('leftArr');
+let rightArr = document.getElementById('rightArr');
 
+// Installation carusel
+for (let y = 0; y < arrCards.length; y++) {
+    arrCards[y].addEventListener('click',caruselCard,false);
+}
+//Installation arrs
+leftArr.addEventListener('click',test,false);
+rightArr.addEventListener('click',test,false);
+let count = 2;
+
+function test(e){
+    if (checkClassArrRight(e.target) == true) {
+        if (count > 4) {
+            count = 0;
+            swtichingCards(count);
+        }
+        swtichingCards(count);
+        count++;
+    }else if(checkClassArrLeft(e.target) == true){
+        if (count <= 0) {
+            count = 4;
+            swtichingCards(count);
+        }
+        swtichingCards(count);
+        count--;
+        
+    }
+}
+function swtichingCards(content){
+    switch (content) {
+        case 1:
+            removeAllClasses()
+            zindAdd(cardOneContainer);
+            addClassCard(cardDescripOne);
+        break;
+        case 2:
+            removeAllClasses()
+            zindAdd(cardTwoContainer);
+            addClassCard(cardDescripTwo);
+        break;
+        case 3:
+            removeAllClasses()
+            zindAdd(cardThreeContainer);
+            addClassCard(cardDescripThree);
+        break;
+        case 4:
+            removeAllClasses()
+            zindAdd(cardFourContainer);
+            addClassCard(cardDescripFour);
+        break;
+    }
+}
+function checkClassArrRight(content){
+    return checkContent = content.classList.contains('fa-angle-right');
+}
+function checkClassArrLeft(content){
+    return checkContent = content.classList.contains('fa-angle-left');
+}
+function removeAllClasses(){
+    zindAdd(cardOneContainer);
+    zindAdd(cardTwoContainer);
+    zindAdd(cardThreeContainer);
+    zindAdd(cardFourContainer);
+    deleteClassCard(cardDescripOne);
+    deleteClassCard(cardDescripTwo);
+    deleteClassCard(cardDescripThree);
+    deleteClassCard(cardDescripFour);
+}
+
+
+function caruselCard(e){
+    let idOfCard = e.target.id; 
+    if (idOfCard == 'cardWhatsOne'){
+        removeAllClasses();
+        if (checkingDecrip(cardDescripOne) == true){
+            deleteClassCard(cardDescripOne);
+        }else if(checkingDecrip (cardDescripOne) == false){
+            addClassCard(cardDescripOne);
+        }
+        if(checkingZindex(cardOneContainer) == true) {
+            zindDel(cardOneContainer);
+        }else{
+            zindAdd(cardOneContainer);
+        }
+        
+    }else if (idOfCard == 'cardWhatsTwo') {
+        removeAllClasses();
+        if (checkingDecrip(cardDescripTwo) == true){
+            deleteClassCard(cardDescripTwo);
+        }else if(checkingDecrip (cardDescripTwo) == false){
+            addClassCard(cardDescripTwo);
+        }
+        if(checkingZindex(cardTwoContainer) == true) {
+            zindDel(cardTwoContainer);
+        }else{
+            zindAdd(cardTwoContainer);
+        }
+    }else if (idOfCard == 'cardWhatsThree') {
+        removeAllClasses();
+        if (checkingDecrip(cardDescripThree) == true){
+            deleteClassCard(cardDescripThree);
+        }else if(checkingDecrip (cardDescripThree) == false){
+            addClassCard(cardDescripThree);
+        }
+        if(checkingZindex(cardThreeContainer) == true) {
+            zindDel(cardThreeContainer);
+        }else{
+            zindAdd(cardThreeContainer);
+        }
+    }else if (idOfCard == 'cardWhatsFour') {
+        removeAllClasses();
+        if (checkingDecrip(cardDescripFour) == true){
+            deleteClassCard(cardDescripFour);
+        }else if(checkingDecrip (cardDescripFour) == false){
+            addClassCard(cardDescripFour);
+        }
+        if(checkingZindex(cardFourContainer) == true) {
+            zindDel(cardFourContainer);
+        }else{
+            zindAdd(cardFourContainer);
+        }
+    }
+}
+function checkingZindex(content){
+    return classCheck = content.classList.contains('zIndex');
+}
+function checkingDecrip(content){
+    return classCheck = content.classList.contains('choosen');
+}
+function deleteClassCard(content) {
+    content.classList.remove('choosen');
+    content.classList.remove('choosenBorder');   
+}
+function addClassCard(content) {
+    content.classList.add('choosen');
+    content.classList.add('choosenBorder');  
+}
+function zindAdd(content){
+    content.classList.add('zIndex');
+}
+function zindDel(content){
+    content.classList.remove('zIndex');
+}
 // End Carusel
-
